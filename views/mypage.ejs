@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav" id="left-nav">
+            <div class="title" href="">Movolay</div> 
+        </div>
+        <div class="nav" id="right-nav">
+            <a href="/log-in" style="padding: 10px;">Login</a>
+            <a href="/sign-up" style="padding-left: 10px;">Signup</a>
+        </div>    
+    </nav>
+    <div class="profile-container">
+        <h1>Profile</h1>
+        <form id="profileForm" method="post" action="/my-page">
+            <div class="preferences">
+                <h3>나의 영화 취향</h3>
+                <div class="select-all-container">
+                    <button type="button" id="selectAllButton">전체 체크</button>
+                </div>
+                <div class="genre-list">
+                    <!-- 취향 장르들 -->
+                    <label>
+                        <input type="checkbox" name="genres" value="SF" id="SF"/>SF
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="가족" id="가족"/>가족
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="공포" id="공포"/>공포
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="다큐멘터리" id="다큐멘터리"/>다큐멘터리
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="로맨스" id="로맨스"/>로맨스
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="모험" id="모험"/>모험
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="미스터리" id="미스터리"/>미스터리
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="범죄" id="범죄"/>범죄
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="서부" id="서부"/>서부
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="스릴러" id="스릴러"/>스릴러
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="애니메이션" id="애니메이션"/>애니메이션
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="액션" id="액션"/>액션
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="역사" id="역사"/>역사
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="음악" id="음악"/>음악
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="전쟁" id="전쟁"/>전쟁
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="코미디" id="코미디"/>코미디
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genres" value="판타지" id="판타지"/>판타지
+                    </label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" id="cancelButton"><a href="/main">취소</a></button>
+                <button type="submit">저장</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
